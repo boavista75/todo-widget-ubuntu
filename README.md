@@ -99,3 +99,7 @@ You can back up or edit this file manually if needed.
 | Window has no transparency | Enable compositing (Zorin has this by default) |
 | Widget missing after reboot | Check the autostart `.desktop` path and `GDK_BACKEND=x11` |
 | `ImportError: No module named gi` | Run the `apt install` command above |
+
+## App preview
+<img width="771" height="587" alt="image" src="https://github.com/user-attachments/assets/034c9374-495e-4338-acdd-5ab7de93d6fa" />
+

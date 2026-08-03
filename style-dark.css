@@ -1,0 +1,155 @@
+/* Premium minimalist dark theme — Todoist / Things 3 inspired */
+
+* {
+    font-family: Cantarell, Ubuntu, "Noto Sans", system-ui, sans-serif;
+    font-size: 15px;
+    -gtk-icon-style: regular;
+}
+
+.todo-window {
+    background-color: transparent;
+}
+
+/* Main container — glassmorphism-style panel */
+.todo-panel {
+    background-color: rgba(30, 30, 30, 0.9);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.28);
+}
+
+.todo-drag-handle {
+    min-height: 12px;
+    padding-top: 12px;
+}
+
+.todo-scrolled {
+    background-color: transparent;
+}
+
+.todo-list {
+    background-color: transparent;
+    padding: 4px 16px 0 16px;
+}
+
+/* Task rows — flat list with subtle dividers */
+.todo-card {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+    margin: 0;
+    padding: 10px 14px;
+    min-height: 24px;
+    box-shadow: none;
+    transition: background-color 150ms ease;
+}
+
+.todo-card:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.todo-row {
+    background-color: transparent;
+}
+
+/* Typography */
+.todo-label {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    padding: 1px 0;
+}
+
+.todo-label.done {
+    color: rgba(136, 136, 136, 0.5);
+    opacity: 0.85;
+}
+
+/* Input area */
+.todo-input-area {
+    padding: 14px 16px 18px 16px;
+    border-top: 1px solid rgba(128, 128, 128, 0.12);
+}
+
+.todo-entry {
+    background-color: rgba(255, 255, 255, 0.06);
+    color: #f2f2f2;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 12px 16px;
+    min-height: 24px;
+    font-size: 16px;
+    caret-color: #7c9cff;
+    transition: border-color 150ms ease, box-shadow 150ms ease, background-color 150ms ease;
+}
+
+.todo-entry:focus {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(124, 156, 255, 0.65);
+    box-shadow: 0 0 0 3px rgba(124, 156, 255, 0.18);
+}
+
+.todo-add-btn {
+    background-color: rgba(255, 255, 255, 0.06);
+    color: rgba(255, 255, 255, 0.45);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 0;
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: 400;
+    transition: background-color 150ms ease, color 150ms ease;
+}
+
+.todo-add-btn:hover {
+    background-color: rgba(124, 156, 255, 0.15);
+    color: #a8beff;
+}
+
+/* Delete button — soft default, red on hover */
+.todo-delete {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.35);
+    border: none;
+    border-radius: 6px;
+    min-width: 28px;
+    min-height: 28px;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 150ms ease, background-color 150ms ease;
+}
+
+.todo-delete:hover {
+    background-color: rgba(255, 77, 77, 0.12);
+    color: #ff4d4d;
+}
+
+/* Checkbox — clean, vertically balanced */
+checkbutton {
+    padding: 0 10px 0 0;
+    margin: 0;
+}
+
+checkbutton check {
+    min-width: 18px;
+    min-height: 18px;
+    border-radius: 4px;
+    border: 1.5px solid rgba(255, 255, 255, 0.28);
+    background-color: transparent;
+    transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+checkbutton check:checked {
+    background-color: #7c9cff;
+    border-color: #7c9cff;
+    color: #1e1e1e;
+}
+
+checkbutton:hover check {
+    border-color: rgba(124, 156, 255, 0.55);
+}
